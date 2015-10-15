@@ -21,7 +21,9 @@ em {
 }
 
 #wrapper {
-    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    margin: auto;
 }
 
 #paragraph1 {
@@ -74,14 +76,19 @@ header p img:hover {
 }
 
 #content {
+    position: absolute;
     color: #dddddd;
     font-family: monospace;
-    width: 100% - 20px;
-    left: 0;
-    padding-top: 58px;
-    padding-left: 245px;
+    width: 100%;
+    left: 220px;
+    top: 50px;
+    bottom: -50px;
     padding-right: 50px;
     line-height: 17px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    overflow-y: auto;
 }
 
 #sidebar {
@@ -158,18 +165,6 @@ header p img:hover {
     color: #aabbaa;
 }
 
-.blue {
-    color: #8080ff;
-}
-
-.orange {
-    color: #cc8040;
-}
-
-.green {
-    color: #409040;
-}
-
 .indent {
     
     padding-left: 20px;   
@@ -188,4 +183,25 @@ header p img:hover {
 
 .floatright {
     float: right;   
+}
+
+pre.prettyprint { 
+    display: block; 
+    background-color: inherit; 
+    border: none;
+    color: #606060;
+}
+pre .nocode { color: #000 }
+pre .pln { color: #fff }    /* plaintext */
+pre .tag { color: #8080ff; } /* html tags */
+pre .atn { color: #409040; } /* attributes */
+pre .atv { color: #dc9050; } /* strings */
+pre .dec { color: #ffffff; } /* <!doctype> */
+pre .com { color: #909090; } /* comment */
+
+li.L0, li.L1, li.L2, li.L3, li.L4,
+li.L5, li.L6, li.L7, li.L8, li.L9
+{ 
+    list-style-type: decimal !important;
+    background-color: inherit;
 }
