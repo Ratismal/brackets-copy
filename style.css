@@ -102,6 +102,11 @@ header p img:hover {
     position: absolute;
 }
 
+#sidebar a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 #sidebar h1 {
     color: #aabbaa;
     margin-left: 10px;
@@ -191,7 +196,25 @@ pre.prettyprint {
     border: none;
     color: #606060;
 }
+
+button {
+    background:none!important;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     border-bottom:1px solid #444; 
+     cursor: pointer;
+}
+
 pre .nocode { color: #000 }
+
+pre .str { color: #ffa0a0 } /* string  - pink */
+pre .kwd { color: #f0e68c; font-weight: bold }
+pre .typ { color: #98fb98 } /* type    - lightgreen */
+pre .lit { color: #600000 } /* literal - darkred */
+pre .pun { color: #fff }    /* punctuation */
+
 pre .pln { color: #fff }    /* plaintext */
 pre .tag { color: #8080ff; } /* html tags */
 pre .atn { color: #409040; } /* attributes */
