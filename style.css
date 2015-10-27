@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     background-color: #202020;
@@ -6,11 +7,10 @@ html, body {
     overflow: hidden;
     font-family: sans-serif;
     text-shadow: 1px 1px #000000;
-    
 }
 
 em {
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 #overflowdiv {
@@ -31,7 +31,7 @@ em {
 }
 
 #paragraph2 {
-    margin: 29px 0 0 0;       
+    margin: 29px 0 0 0;
 }
 
 header {
@@ -47,7 +47,7 @@ header {
 }
 
 header img {
-    float: left; 
+    float: left;
     margin-right: 5px;
 }
 
@@ -63,16 +63,16 @@ header img {
 header p {
     margin-top: 3px;
     margin-bottom: 7px;
-    margin-left: 15px;   
+    margin-left: 15px;
 }
 
 header p img {
-    padding: 2px;   
+    padding: 2px;
 }
 
 header p img:hover {
     background-color: #202020;
-    transition: 0.2s;   
+    transition: 0.2s;
 }
 
 #content {
@@ -85,10 +85,22 @@ header p img:hover {
     bottom: -50px;
     padding-right: 50px;
     line-height: 17px;
-    padding-top: 20px;
     margin-bottom: 50px;
     padding-bottom: 50px;
     overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#nothing {
+    margin-top: 5%;
+}
+
+#nothing h1 {
+    font-size: 2em;
+}
+
+#nothing p {
+    font-size: 1.5em;
 }
 
 #sidebar {
@@ -103,6 +115,7 @@ header p img:hover {
 }
 
 #sidebar a {
+    text-shadow: 1px 1px #000000;
     color: inherit;
     text-decoration: inherit;
 }
@@ -115,15 +128,17 @@ header p img:hover {
 }
 
 #sidebar p {
+    text-align: left;
+    width: 170px;
     margin-left: 20px;
     font-size: 1em;
-    margin-bottom: 5px;
-    margin-top: 1px;
+    margin-bottom: 3px;
+    margin-top: 3px;
     padding-bottom: 1px;
 }
 
 #sidebar nav {
-    height: 100%;
+    height: 800px;
     margin-top: 30px;
     border-top: 1px solid #707070;
     width: 100%;
@@ -131,7 +146,7 @@ header p img:hover {
 }
 
 #sidebar i {
-    text-shadow: 0 0 #000000;   
+    text-shadow: 0 0 #000000;
     font-size: 0.7em;
     color: #999999;
 }
@@ -171,8 +186,7 @@ header p img:hover {
 }
 
 .indent {
-    
-    padding-left: 20px;   
+    padding-left: 20px;
 }
 
 .center {
@@ -187,44 +201,288 @@ header p img:hover {
 }
 
 .floatright {
-    float: right;   
+    float: right;
 }
 
-pre.prettyprint { 
-    display: block; 
-    background-color: inherit; 
+pre.prettyprint {
+    display: block;
+    background-color: inherit;
     border: none;
     color: #606060;
 }
 
 button {
-    background:none!important;
-     border:none; 
-     padding:0!important;
-     font: inherit;
-     /*border is optional*/
-     border-bottom:1px solid #444; 
-     cursor: pointer;
+    text-shadow: 1px 1px #000;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    /*border is optional*/
+    cursor: pointer;
 }
 
-pre .nocode { color: #000 }
 
-pre .str { color: #ffa0a0 } /* string  - pink */
-pre .kwd { color: #f0e68c; font-weight: bold }
-pre .typ { color: #98fb98 } /* type    - lightgreen */
-pre .lit { color: #600000 } /* literal - darkred */
-pre .pun { color: #fff }    /* punctuation */
+/**
+* HTML
+**/
 
-pre .pln { color: #fff }    /* plaintext */
-pre .tag { color: #8080ff; } /* html tags */
-pre .atn { color: #409040; } /* attributes */
-pre .atv { color: #dc9050; } /* strings */
-pre .dec { color: #ffffff; } /* <!doctype> */
-pre .com { color: #909090; } /* comment */
+pre .nocode {
+    color: #000
+}
 
-li.L0, li.L1, li.L2, li.L3, li.L4,
-li.L5, li.L6, li.L7, li.L8, li.L9
-{ 
+pre .str {
+    color: #dc9050
+}
+
+
+/* string  - pink */
+
+pre .kwd {
+    color: #8080ff;
+    font-weight: bold
+}
+
+pre .typ {
+    color: #fff
+}
+
+
+/* type    - lightgreen */
+
+pre .lit {
+    color: #68fb68
+}
+
+
+/* literal - darkred */
+
+pre .pun {
+    color: #fff
+}
+
+
+/* punctuation */
+
+pre .pln {
+    color: #fff
+}
+
+
+/* plaintext */
+
+pre .tag {
+    color: #8080ff;
+}
+
+
+/* html tags */
+
+pre .atn {
+    color: #409040;
+}
+
+
+/* attributes */
+
+pre .atv {
+    color: #dc9050;
+}
+
+
+/* strings */
+
+pre .dec {
+    color: #ffffff;
+}
+
+
+/* <!doctype> */
+
+pre .com {
+    color: #909090;
+}
+
+
+/* comment */
+
+
+/**
+* CSS
+**/
+
+.lang-css .nocode {
+    color: #000;
+}
+
+.lang-css .str {
+    color: #dc9050;
+}
+
+
+/* string  - pink */
+
+.lang-css .kwd {
+    color: #ba80ba;
+    font-weight: bold
+}
+
+.lang-css .typ {
+    color: #fff;
+}
+
+
+/* type    - lightgreen */
+
+.lang-css .lit {
+    color: #dc9050;
+}
+
+
+/* literal - darkred */
+
+.lang-css .pun {
+    color: #fff;
+}
+
+
+/* punctuation */
+
+.lang-css .pln {
+    color: #8080ff;
+}
+
+
+/* plaintext */
+
+.lang-css .tag {
+    color: #8080ff;
+}
+
+
+/* html tags */
+
+.lang-css .atn {
+    color: #dc9050;
+}
+
+
+/* attributes */
+
+.lang-css .atv {
+    color: #dc9050;
+}
+
+
+/* strings */
+
+.lang-css .dec {
+    color: #ffffff;
+}
+
+
+/* <!doctype> */
+
+.lang-css .com {
+    color: #909090;
+}
+
+
+/* comment */
+
+
+/**
+* JS
+**/
+
+.lang-js .nocode {
+    color: #000
+}
+
+.lang-js .str {
+    color: #dc9050
+}
+
+
+/* string  - pink */
+
+.lang-js .kwd {
+    color: #8080ff;
+    font-weight: bold
+}
+
+.lang-js .typ {
+    color: #fff
+}
+
+
+/* type    - lightgreen */
+
+.lang-js .lit {
+    color: #68fb68
+}
+
+
+/* literal - darkred */
+
+.lang-js .pun {
+    color: #fff
+}
+
+
+/* punctuation */
+
+.lang-js .pln {
+    color: #ba80ba
+}
+
+
+/* plaintext */
+
+.lang-js .tag {
+    color: #8080ff;
+}
+
+
+/* html tags */
+
+.lang-js .atn {
+    color: #409040;
+}
+
+
+/* attributes */
+
+.lang-js .atv {
+    color: #dc9050;
+}
+
+
+/* strings */
+
+.lang-js .dec {
+    color: #ffffff;
+}
+
+
+/* <!doctype> */
+
+.lang-js .com {
+    color: #909090;
+}
+
+
+/* comment */
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
     list-style-type: decimal !important;
     background-color: inherit;
 }
